@@ -61,7 +61,7 @@ export default function Cards({ cartItems, setCartItems }) {
                                 <div style={{ fontWeight: 800 }} >$ {items?.price}</div>
                                 <Rating readonly size={25} initialValue={items?.rating?.rate} />
                                 {isItemAvailable?.length > 0 && <a href="#" className="mt-2 btn btn-primary" onClick={() => removeCartItem(items.id)}>REMOVE FROM CART</a>}
-                                {isItemAvailable?.length === 0 && <a href="#" className="mt-2 btn btn-primary" onClick={() => addCart(items)}>ADD TO CART</a>}
+                                {(!isItemAvailable || isItemAvailable?.length === 0) && <a href="#" className="mt-2 btn btn-primary" onClick={() => addCart(items)}>ADD TO CART</a>}
                             </div>
                         </div>
                     )

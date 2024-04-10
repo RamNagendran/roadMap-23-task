@@ -37,7 +37,7 @@ export default function Header({ cartItems }) {
                 <Button onClick={() => setShow(true)} className='cart-btn' >
                     <img src={CartIcon} height={18} width={18} />
                     <span >Cart</span>
-                    <div className='cart-counter' >{cartItems?.length}</div>
+                    <div className='cart-counter' >{cartItems?.length || 0}</div>
                 </Button>
             </Navbar>
             <Offcanvas placement='end' show={show} onHide={() => setShow(false)}>
