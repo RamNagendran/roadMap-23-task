@@ -1,0 +1,29 @@
+.header .cart-btn {
+    background: none;
+    border: 1px solid #000;
+    color: #000;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 5px;
+    width: 110px;
+}
+.header .cart-btn:hover {
+    background: none;
+    color: #000;
+    border: 1px solid #000;
+}
+.header .cart-btn .cart-counter {
+    height: 18px;
+    width: 23px;
+    border: 1px solid #fff;
+    background-color: #000;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 12px;
+}
